@@ -1,0 +1,16 @@
+{
+  "name": "SDLC Client",
+  "short_name": "SDLC Client",
+  "description": "티켓에서 시작하는 AI Native Engineering",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0c0b",
+  "theme_color": "#0b0c0b",
+  "icons": [
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
