@@ -5,6 +5,12 @@
 별도 build step 없이 `index.html`, `styles.css`, `script.js`만으로 동작합니다. GitHub Pages의
 project site 경로에서도 작동하도록 모든 asset 경로를 상대 경로로 사용합니다.
 
+## 온라인 실행
+
+QueryPie 계정으로 로그인하면 운영 중인
+[SDLC Client](https://sdlc-client.dev.querypie.io)에서 내 Jira 티켓과 연결된 작업을
+브라우저로 확인하고 이어갈 수 있습니다.
+
 ## 로컬 미리보기
 
 ```bash

@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Site Sans";
   src:
-    local("Pretendard Variable"), local("Pretendard"), local("SUIT Variable"),
-    local("Apple SD Gothic Neo");
+    local("Inter Variable"), local("Inter"), local("Pretendard Variable"),
+    local("Pretendard"), local("SUIT Variable"), local("Apple SD Gothic Neo");
   font-display: swap;
 }
 
@@ -19,9 +19,10 @@
   --accent-soft: #ff7658;
   --green: #b7ff5a;
   --blue: #7fa6ff;
-  --display: "Site Sans", "Arial Black", sans-serif;
+  --display: "Inter", "Site Sans", "Arial Black", sans-serif;
   --body:
-    "Site Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "Inter", "Site Sans", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
   --shell: min(1320px, calc(100vw - 64px));
 }
 
@@ -777,6 +778,7 @@ code {
 .foundation,
 .architecture,
 .product,
+.online,
 .quickstart,
 .faq {
   padding: 150px 0;
@@ -1729,6 +1731,102 @@ code {
   line-height: 1.7;
 }
 
+.online {
+  overflow: hidden;
+}
+
+.online-intro {
+  display: grid;
+  justify-items: start;
+  gap: 28px;
+  margin-bottom: 8px;
+}
+
+.online-intro p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 17px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+.online-figure {
+  margin: 0;
+}
+
+.online-shot-scroll {
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  background: #f4f6f8;
+  box-shadow: 0 45px 110px rgba(0, 0, 0, 0.36);
+}
+
+.online-shot-scroll:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.online-shot {
+  position: relative;
+  display: block;
+  min-width: 840px;
+}
+
+.online-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.online-shot-action {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(11, 12, 11, 0.88);
+  color: var(--white);
+  padding: 11px 17px;
+  font-size: 11px;
+  font-weight: 800;
+  backdrop-filter: blur(10px);
+}
+
+.online-shot-action i {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.online-figure figcaption {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 11px;
+}
+
+.online-callouts {
+  border-color: var(--line-dark);
+}
+
+.online-callouts article {
+  border-color: var(--line-dark);
+}
+
+.online-callouts h3 {
+  color: var(--white);
+}
+
+.online-callouts p {
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.online-callouts p strong {
+  color: rgba(255, 255, 255, 0.82);
+}
+
 .quickstart-grid {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
@@ -2298,6 +2396,7 @@ code {
   .foundation,
   .architecture,
   .product,
+  .online,
   .quickstart,
   .faq {
     padding: 110px 0;
@@ -2362,6 +2461,9 @@ code {
   }
   .feature-callouts article:nth-child(n + 3) {
     border-top: 1px solid var(--line);
+  }
+  .online-callouts article:nth-child(n + 3) {
+    border-top-color: var(--line-dark);
   }
   .quickstart-grid {
     grid-template-columns: 1fr;
@@ -2449,6 +2551,7 @@ code {
   .foundation,
   .architecture,
   .product,
+  .online,
   .quickstart,
   .faq {
     padding: 82px 0;
@@ -2552,6 +2655,26 @@ code {
   }
   .feature-callouts h3 {
     margin-top: 32px;
+  }
+  .online-intro {
+    gap: 22px;
+  }
+  .online-intro p {
+    font-size: 14px;
+  }
+  .online-shot {
+    min-width: 900px;
+  }
+  .online-shot-action {
+    right: 16px;
+    bottom: 16px;
+  }
+  .online-figure figcaption {
+    line-height: 1.6;
+  }
+  .online-callouts article,
+  .online-callouts article + article {
+    border-top-color: var(--line-dark);
   }
   .terminal pre {
     min-height: 440px;
