@@ -1727,6 +1727,17 @@ code {
   font-weight: 800;
 }
 
+.faq-doc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 26px;
+  margin: -8px 45px 32px;
+}
+
+.faq-doc-links .faq-doc-link {
+  margin: 0;
+}
+
 .final-cta .eyebrow.dark {
   color: rgba(255, 255, 255, 0.94);
 }
@@ -1833,7 +1844,7 @@ code {
 
 .site-footer .page-shell {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.75fr 0.75fr 1.5fr;
   align-items: end;
   gap: 30px;
 }
@@ -1849,6 +1860,7 @@ code {
 }
 .site-footer nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   gap: 24px;
   font-size: 10px;
@@ -1908,7 +1920,7 @@ code {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 980px) {
   :root {
     --shell: calc(100vw - 40px);
   }
@@ -2361,6 +2373,10 @@ code {
     font-size: 13px;
   }
   .faq-doc-link {
+    margin: -8px 34px 27px;
+  }
+  .faq-doc-links {
+    gap: 12px 20px;
     margin: -8px 34px 27px;
   }
   .final-cta {
