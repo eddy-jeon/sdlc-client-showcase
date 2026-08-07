@@ -660,6 +660,10 @@ code {
   transform: translateY(-8px);
 }
 
+.stage-card:hover > div {
+  color: rgba(255, 255, 255, 0.78);
+}
+
 .stage-card::before {
   position: absolute;
   top: -4px;
@@ -707,6 +711,11 @@ code {
   margin: 116px 0 18px;
   font-size: clamp(31px, 3vw, 44px);
   letter-spacing: -0.055em;
+  overflow-wrap: anywhere;
+}
+
+.stage-05 h3 {
+  font-size: clamp(26px, 2.1vw, 32px);
 }
 
 .stage-card p {
@@ -732,7 +741,11 @@ code {
 }
 
 .stage-card:hover > b {
-  color: var(--stage-color);
+  color: #93c5fd;
+}
+
+.stage-card:hover small {
+  color: #93c5fd;
 }
 
 .foundation-notes {
